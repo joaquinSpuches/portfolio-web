@@ -1,0 +1,69 @@
+---
+import Diploma from "./Diploma.astro"
+
+const current = {
+
+}
+---
+
+<section class="overflow-hidden">
+    <div>
+    <ul class="flex   gap-[77px] ">
+        <Diploma
+            current= 'current'
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-we-3b786.appspot.com/o/diplomaUXUI.png?alt=media&token=bcbf7b68-5406-4054-86a3-9858f7c0daf3"
+        />
+
+        <Diploma
+            current="current"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-we-3b786.appspot.com/o/diplomanext.png?alt=media&token=05a2a5ec-94a1-4066-b1b0-89e11c5f7d7e"
+        />
+
+        <Diploma
+            current="current"
+            image="https://firebasestorage.googleapis.com/v0/b/portfolio-we-3b786.appspot.com/o/diplomafullstack.png?alt=media&token=c3e08e53-d82b-47cd-a614-136d6ac96c0c"
+        />
+    </ul>
+
+   
+        <!-- aqui van las flechas estilo minimalista que voy a usar para pasar de diploma en diploma-->
+        <button class="arrow-button left-button" onclick="scrollLeft()">&lt;</button>
+        <button class="arrow-button right-button" onclick="scrollRight()">&gt;</button>
+    </div>
+
+    <style>
+        .arrow-button {
+            position: realtive;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            color: #fff;
+
+            cursor: pointer;
+        }
+
+        .left-button {
+            left: 10px;
+        }
+
+        .right-button {
+            right: 10px;
+        }
+    </style>
+
+    <script>
+        function scrollLeft() {
+            const carousel = document.querySelector('.flex');
+            carousel.scrollLeft -= 100; // Adjust the scroll distance as needed
+        }
+
+        function scrollRight() {
+            const carousel = document.querySelector('.flex');
+            carousel.scrollLeft += 100; // Adjust the scroll distance as needed
+        }
+    </script>
+</section>

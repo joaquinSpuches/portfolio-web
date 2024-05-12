@@ -1,9 +1,11 @@
 ---
 interface Props {
     image:string;
+    current: string;
 }
 
 const {  image } = Astro.props;
+const { current } = Astro.props;
 ---
 
-<img src={image} class="w-full rounded-md " alt="dploma"/>
+<img style={current} src={image} class="w-full rounded-md " alt="dploma"/>
