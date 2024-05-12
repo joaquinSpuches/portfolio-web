@@ -1,0 +1,81 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Diploma from '../components/Diploma.astro';
+import Footer from '../components/Footer.astro'
+import Header from '../components/Header.astro';
+---
+
+<Layout title="Joaquin Spuches - Portfolio">
+	<Header />
+	<main class="flex flex-col  mt-28 max-w-[1128px] justify-start">
+		<h1 class="pb-10 w-full">Experiencia</h1>
+		<section class="flex flex-wrap	 w-full justify-center  xl:justify-start gap-[77px]">
+			<Card
+		image="../../public/prensa1.png"
+		href="/"
+		title="OneCoffeeFirst"
+		
+	/> 
+		<Card
+		image="../../public/Rectangle2.png"
+		href="/"
+		title="Malewo"
+		
+	/> 
+		<Card
+		image="../../public/Rectangle3.png"
+		href="/"
+		title="Cooperaccion landing page"
+		
+	/> 
+		<Card
+		image="../../public/Rectangle4.png"
+		href="/"
+		title="Rick and Morty api"
+		
+	/> 
+
+		<Card
+		image="../../public/Rectangle5.png"
+		href="/"
+		title="BrickBreaker"
+		
+	/>  
+		</section>
+		<p class="my-8 text-sm">Desarrollador Front-end y diseñador UX/UI. Mi capacidad de aprender rápidamente es lo que me distingue. Autodidacta de nacimiento‍Soy un desarrollador Front-end apasionado por el diseño gráfico. Durante el 2021, estudié programación web full-stack en Digital House y desde entonces he enfocado mis conocimientos en el mundo del Front-end.Mi pasión por el arte y la tecnología me llevó a estudiar Artes Electrónicas en la Universidad de Tres de Febrero. En 2022, viví en Sicilia, Italia, durante 7 meses antes de mudarme a Barcelona, España, donde actualmente resido.🔙 Antes de mi mudanza, trabajé como editor de video y sonido para el programa de radio Malditos nerds en Buenos Aires. Desde entonces, he estado trabajando como freelance en proyectos de desarrollo web, principalmente en el área Front-end.😎 Actualmente, busco un trabajo fijo que me permita seguir creciendo como Web developer y contribuir a proyectos emocionantes.</p>
+		<h1 class="pb-10  w-full  ">Diplomas</h1>
+	<section class="flex overflow-x-scroll  gap-[77px]">
+		<Diploma
+		image="../../public/diplomaUXUI.png"
+		/>
+		<Diploma
+		image="../../public/diplomanext.png"
+		/>
+		<Diploma
+		image="../../public/diplomafullstack.png"
+		/>
+	</section>
+	</main>
+	<Footer/>
+</Layout>
+
+<style>
+	main {
+		
+		padding: 1rem;
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	
+
+	h1 {
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 1;
+		text-align: start;
+		
+	}
+
+</style>
